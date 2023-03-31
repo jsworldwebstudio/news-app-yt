@@ -14,16 +14,16 @@ const ReadMoreButton = ({ article }: Props) => {
       .map(([key, value]) => `${key}=${value}`)
       .join("&")
     const url = `/article?${queryString}`
-    console.log(url)
+    // console.log(url)
     router.push(url)
   }
 
   return (
     <button
       onClick={handleClick}
-      className="h-10 bg-orange-400 rounded-b-lg dark:text-gray-900 hover:bg-orange-500"
+      className="flex flex-col w-full h-10 mt-auto bg-orange-400 rounded-b-lg dark:text-gray-900 hover:bg-orange-500"
     >
-      Read More
+      <span className="flex mx-auto my-auto font-medium">Read More...</span>
     </button>
   )
 }

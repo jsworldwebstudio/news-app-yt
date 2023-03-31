@@ -15,7 +15,7 @@ const Article = ({article}: Props) => {
         />
       )}
 
-      <div className="flex-col flex-1">
+      <div className="flex flex-col flex-1">
         <div className="flex flex-col flex-1 p-5">
           <h2 className="font-serif font-bold">{article.title}</h2>
 
